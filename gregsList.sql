@@ -1,5 +1,6 @@
 CREATE TABLE my_contacts
-( last_name VARCHAR(30)
+( contact_id INT NOT NULL AUTO_INCREMENT
+  , last_name VARCHAR(30)
   , first_name VARCHAR(20)
   , email VARCHAR(50)
   , gender CHAR(1)
@@ -8,7 +9,8 @@ CREATE TABLE my_contacts
   , location VARCHAR(50)
   , status VARCHAR(20)
   , interests VARCHAR(100)
-  , seeking VARCHAR(100)
+  , seeking VARCHAR(100),
+  PRIMARY KEY (contact_id)
 );
 
 INSERT INTO my_contacts
